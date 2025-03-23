@@ -10,7 +10,7 @@ body {
 /* Navbar Styles */
 .navbar {
     background-color: #222;
-    padding: 10px; /* Уменьшено */
+    padding: 10px !important; /* Уменьшено */
     position: fixed;
     top: 0;
     left: 0;
@@ -23,75 +23,75 @@ body {
 }
 
 .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em; /* Уменьшено */
-    font-weight: bold;
-    margin-bottom: 5px; /* Уменьшено */
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 1em !important; /* Уменьшено */
+    font-weight: bold !important;
+    margin-bottom: 5px !important; /* Уменьшено */
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    width: 100%;
+    list-style: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 0 !important;
+    width: 100% !important;
 }
 
 .menu li {
-    margin: 3px 0; /* Уменьшено */
-    position: relative;
-    width: 100%;
-    text-align: center;
+    margin: 3px 0 !important; /* Уменьшено */
+    position: relative !important;
+    width: 100% !important;
+    text-align: center !important;
 }
 
 .menu li a {
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s;
-    display: block;
-    padding: 6px 10px; /* Уменьшено */
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 0.9em; /* Уменьшено */
+    color: #ddd !important;
+    text-decoration: none !important;
+    transition: color 0.3s !important;
+    display: block !important;
+    padding: 6px 10px !important; /* Уменьшено */
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 0.9em !important; /* Уменьшено */
 }
 
 .menu li a:hover {
-    color: #fff;
-    background-color: rgba(255,255,255,0.1);
+    color: #fff !important;
+    background-color: rgba(255,255,255,0.1) !important;
 }
 
 /* Submenu Styles */
 .submenu {
-    position: static;
-    background-color: #333;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    width: 100%;
-    box-shadow: none;
-    opacity: 1;
-    transform: translateY(0);
-    text-align: center;
+    position: static !important;
+    background-color: #333 !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: none !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    text-align: center !important;
 }
 
 .submenu li {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .submenu li a {
-    padding: 6px 10px; /* Уменьшено */
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 0.9em; /* Уменьшено */
+    padding: 6px 10px !important; /* Уменьшено */
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 0.9em !important; /* Уменьшено */
 }
 
 .menu li:hover > .submenu {
-    display: block;
+    display: block !important;
 }
 
 /* Specific Submenu Alignment for OSINT */
@@ -102,82 +102,8 @@ body {
 
 /* Sub-submenu Styles */
 .sub-submenu {
-    position: static;
-    background-color: #444;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    width: 100%;
-    box-shadow: none;
-    opacity: 1;
-    transform: translateX(0);
-    text-align: center;
-}
-
-.submenu li:hover > .sub-submenu {
-    display: block;
-}
-
-/* Content Styles */
-.content {
-    padding: 60px 15px 15px; /* Уменьшено */
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.content h1 {
-    font-size: 1.8em; /* Уменьшено */
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-/* Desktop Styles (Для экранов шире 768px) */
-@media (min-width: 769px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px; /* Уменьшено */
-    }
-
-    .logo a {
-        font-size: 1.2em; /* Уменьшено */
-        margin-bottom: 0;
-        margin-right: auto;
-    }
-
-    .menu {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .menu li {
-        margin: 0 15px; /* Уменьшено */
-        width: auto;
-        text-align: left;
-    }
-
-    .menu li a {
-        padding: 8px 12px; /* Уменьшено */
-        width: auto;
-        box-sizing: content-box;
-        font-size: 0.9em; /* Уменьшено */
-    }
-
-    .submenu {
-        position: absolute;
-        display: none;
-        width: auto;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        text-align: left;
-    }
-
-    .sub-submenu {
-        position: absolute;
-        display: none;
-        width: auto;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        text-align: left;
-    }
-}
+    position: static !important;
+    background-color: #444 !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
