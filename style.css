@@ -10,7 +10,7 @@ body {
 /* Navbar Styles */
 .navbar {
     background-color: #222;
-    padding: 15px; /* Уменьшаем отступ для мобильных устройств */
+    padding: 10px; /* Уменьшено */
     position: fixed;
     top: 0;
     left: 0;
@@ -18,33 +18,33 @@ body {
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     display: flex;
-    flex-direction: column; /* Меню и лого друг под другом по умолчанию */
-    align-items: center; /* Центрируем элементы */
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em; /* Уменьшаем размер логотипа для мобильных устройств */
+    font-size: 1em; /* Уменьшено */
     font-weight: bold;
-    margin-bottom: 10px; /* Добавляем отступ между логотипом и меню */
+    margin-bottom: 5px; /* Уменьшено */
 }
 
 .menu {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Вертикальное меню */
+    flex-direction: column;
     align-items: center;
     margin: 0;
-    width: 100%; /* Занимает всю ширину */
+    width: 100%;
 }
 
 .menu li {
-    margin: 5px 0; /* Уменьшаем отступы между пунктами меню */
+    margin: 3px 0; /* Уменьшено */
     position: relative;
-    width: 100%; /* Пункты меню занимают всю ширину */
-    text-align: center; /* Центрируем текст */
+    width: 100%;
+    text-align: center;
 }
 
 .menu li a {
@@ -52,26 +52,27 @@ body {
     text-decoration: none;
     transition: color 0.3s;
     display: block;
-    padding: 8px 12px; /* Уменьшаем отступы внутри ссылок */
-    width: 100%; /* Ссылки занимают всю ширину пунктов меню */
-    box-sizing: border-box; /* Важно, чтобы padding не увеличивал ширину */
+    padding: 6px 10px; /* Уменьшено */
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9em; /* Уменьшено */
 }
 
 .menu li a:hover {
     color: #fff;
-    background-color: rgba(255,255,255,0.1); /* Подсветка при наведении */
+    background-color: rgba(255,255,255,0.1);
 }
 
 /* Submenu Styles */
 .submenu {
-    position: static; /* Убираем абсолютное позиционирование */
+    position: static;
     background-color: #333;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; /* Скрыто по умолчанию */
+    display: none;
     width: 100%;
-    box-shadow: none; /* Убираем тень */
+    box-shadow: none;
     opacity: 1;
     transform: translateY(0);
     text-align: center;
@@ -82,32 +83,33 @@ body {
 }
 
 .submenu li a {
-    padding: 8px 12px;
+    padding: 6px 10px; /* Уменьшено */
     display: block;
     width: 100%;
     box-sizing: border-box;
+    font-size: 0.9em; /* Уменьшено */
 }
 
 .menu li:hover > .submenu {
-    display: block; /* Показываем подменю при наведении */
+    display: block;
 }
 
 /* Specific Submenu Alignment for OSINT */
-.submenu li:first-child .sub-submenu { /* Target the first submenu item */
+.submenu li:first-child .sub-submenu {
     top: 0;
     left: 100%;
 }
 
 /* Sub-submenu Styles */
 .sub-submenu {
-    position: static; /* Убираем абсолютное позиционирование */
+    position: static;
     background-color: #444;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; /* Скрыто по умолчанию */
+    display: none;
     width: 100%;
-    box-shadow: none; /* Убираем тень */
+    box-shadow: none;
     opacity: 1;
     transform: translateX(0);
     text-align: center;
@@ -119,13 +121,13 @@ body {
 
 /* Content Styles */
 .content {
-    padding: 70px 15px 15px; /* Уменьшаем отступ сверху */
+    padding: 60px 15px 15px; /* Уменьшено */
     max-width: 800px;
     margin: 0 auto;
 }
 
 .content h1 {
-    font-size: 2em; /* Уменьшаем размер заголовка */
+    font-size: 1.8em; /* Уменьшено */
     margin-bottom: 15px;
     text-align: center;
 }
@@ -133,40 +135,41 @@ body {
 /* Desktop Styles (Для экранов шире 768px) */
 @media (min-width: 769px) {
     .navbar {
-        flex-direction: row; /* Возвращаем горизонтальное расположение */
-        justify-content: space-between; /* Распределяем элементы по краям */
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        padding: 20px; /* Возвращаем исходные отступы */
+        padding: 15px; /* Уменьшено */
     }
 
     .logo a {
-        font-size: 1.5em; /* Возвращаем исходный размер логотипа */
-        margin-bottom: 0; /* Убираем отступ */
-        margin-right: auto; /* Прижимаем к левому краю */
+        font-size: 1.2em; /* Уменьшено */
+        margin-bottom: 0;
+        margin-right: auto;
     }
 
     .menu {
-        flex-direction: row; /* Возвращаем горизонтальное меню */
+        flex-direction: row;
         align-items: center;
     }
 
     .menu li {
-        margin: 0 20px; /* Возвращаем отступы между пунктами */
+        margin: 0 15px; /* Уменьшено */
         width: auto;
         text-align: left;
     }
 
     .menu li a {
-        padding: 10px 15px; /* Возвращаем отступы */
+        padding: 8px 12px; /* Уменьшено */
         width: auto;
-        box-sizing: content-box; /* Важно для корректной ширины */
+        box-sizing: content-box;
+        font-size: 0.9em; /* Уменьшено */
     }
 
     .submenu {
-        position: absolute; /* Возвращаем абсолютное позиционирование */
+        position: absolute;
         display: none;
         width: auto;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Возвращаем тень */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         text-align: left;
     }
 
